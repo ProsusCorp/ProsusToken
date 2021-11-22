@@ -1,13 +1,14 @@
-# Prosus-BSC-Token
+# Prosus-BSC
 
-http://token.prosus.money
+https://prosus-bsc.cl
 
+----
 
 ## objetivo general
 Interacción de **Prosus Blockchain** con BSC (Binance Smart Chain)
 
 ## objetivos específicos
-* crear token ERC-20
+* crear token BEP-20
 * publicar website para venta de token (BNB swaping)
 * desarrollar smartcontract (Solidity) que lea información de **Prosus Blockchain**.
 * interfaz de usuario
