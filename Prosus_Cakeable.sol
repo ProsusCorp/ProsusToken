@@ -1,22 +1,24 @@
 // SPDX-License-Identifier: MIT
 
-/// Prosus-BNB 2.0 ( draft 0.1 ) ///
+pragma solidity ^0.8.10;
 
-// Esta es la base del contrato upgradeable. 
-// Falta definir el proceso de MINTEO como se manejará, quizas recibiendo BNB con un precio de base como en Prosus-BNB 1.0
-
-pragma solidity ^0.8.2;
-
-import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-ERC20PermitUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+import "@openzeppelin/contracts-upgradeable@4.4.0/token/ERC20/ERC20Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable@4.4.0/token/ERC20/extensions/ERC20BurnableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable@4.4.0/security/PausableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable@4.4.0/access/OwnableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable@4.4.0/token/ERC20/extensions/draft-ERC20PermitUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable@4.4.0/proxy/utils/Initializable.sol";
 
 /// @custom:security-contact mariano.silva@gmail.com
 contract ProsusBSC is Initializable, ERC20Upgradeable, ERC20BurnableUpgradeable, PausableUpgradeable, OwnableUpgradeable, ERC20PermitUpgradeable {
     /// @custom:oz-upgrades-unsafe-allow constructor
+/**
+ * @dev Prosus-BNB 2.0 ( draft 0.1 ) (C) Mariano Silva
+ * 
+ * -- Esta es la base del contrato upgradeable. 
+ * 
+ * -- Falta definir el proceso de MINTEO como se manejará, quizas recibiendo BNB con un precio de base como en Prosus-BNB 1.0
+ */
     constructor() initializer {}
 
     function initialize() initializer public {
