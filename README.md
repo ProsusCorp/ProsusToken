@@ -1,6 +1,6 @@
 # Prosus-BSC
 
-https://prosus-bsc.cl
+https://www.prosustoken.cl
 
 ----
 
